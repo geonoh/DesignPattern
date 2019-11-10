@@ -4,6 +4,7 @@
 class CDynamicObject :
 	public CDynamicAllocSingleton<CDynamicObject>
 {
+public:
 	CDynamicObject() {}
 	~CDynamicObject()
 	{

@@ -11,7 +11,7 @@ class CDynamicAllocSingleton
 {
 public:
 	CDynamicAllocSingleton() {}
-	~CDynamicAllocSingleton()
+	virtual ~CDynamicAllocSingleton()
 	{
 		std::cout << "~CDynamicAllocSingleton has been called \n";
 	}
@@ -64,3 +64,6 @@ public:
 private:
 	static T Instance;
 };
+
+template<typename T>
+T CNonDynamicAllocSingleton<T>::Instance;

@@ -4,6 +4,7 @@
 class CNonDynamicObject :
 	public CNonDynamicAllocSingleton<CNonDynamicObject>
 {
+public:
 	CNonDynamicObject() {}
 	~CNonDynamicObject()
 	{
