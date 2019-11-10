@@ -27,9 +27,7 @@ public:
 		}
 		else
 		{
-			// Gunny Todo. JsonLog
-			// Can be added by NUGET?
-			std::cout << "Instance does not exist." << std::endl;
+			std::cout << "CSingleton - Destroy Instance does not exist." << std::endl;
 		}
 	}
 

@@ -7,7 +7,9 @@ enum class EObserverContent
 	Max,
 };
 
+// forward declare
 class CWorld;
+class CObject;
 
 class CObserver
 	: public CSingleton<typename CObserver>
@@ -23,16 +25,8 @@ public:
 	virtual	void Tick() override;
 
 	// Subscriber 
-	//virtual void Subscribe();
-	//virtual void Unsubscribe();
+	void Subscirbe(CObject* InObejct, EObserverContent InObserverContent);
 
 private:
-	void InitObserverMember();
-	void DestroyObserverMember();
-
-	CObserver* GetObserver(EObserverContent InObserverContent);
 	CWorld* GetWorld();
-
-
-	std::vector<CObserver*> Observers;
 };

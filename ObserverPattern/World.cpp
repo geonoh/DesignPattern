@@ -12,6 +12,6 @@ void CWorld::NativeDestuct()
 
 void CWorld::Tick()
 {
-	// gunny temp code
+	// Gunny temp code
 	std::cout << "CWorld::Tick has been called.\n";
 }

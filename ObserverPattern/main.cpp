@@ -1,26 +1,55 @@
 #include "ProjectHeader.h"
 
-void InitInstance();
-void DestroyInstance();
+// Project Init
+void Init();
+void Destroy();
+
+// Observer
+void InitObserver();
+void DestroyObserver();
+
+// Widget
+void InitWidgets();
+void DestroyWidgets();
 
 int main()
 {
-	InitInstance();
+	Init();
 
 	while (true)
 	{
 		GetObserver()->Tick();
 	}
 
-	DestroyInstance();
 }
 
-void InitInstance()
+void Init()
+{
+	InitObserver();
+	InitWidgets();
+}
+
+void Destroy()
+{
+	DestroyObserver();
+}
+
+void InitObserver()
 {
 	GetObserver()->NativeConstruct();
 }
 
-void DestroyInstance()
+void DestroyObserver()
 {
 	GetObserver()->NativeDestuct();
+}
+
+void InitWidgets()
+{
+
+}
+
+void DestroyWidgets()
+{
+
 }

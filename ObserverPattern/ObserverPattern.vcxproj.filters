@@ -39,9 +39,6 @@
     <ClCompile Include="Object.cpp">
       <Filter>Source\0_Main\0_Object</Filter>
     </ClCompile>
-    <ClCompile Include="Singleton.cpp">
-      <Filter>Source\1_DesignPattern\Singleton</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observer.h">
