@@ -1,0 +1,10 @@
+﻿  DynamicObject.cpp
+  Main.cpp
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\Singleton.h(31,1): error C2248:  'CDynamicObject::~CDynamicObject': private 멤버('CDynamicObject' 클래스에서 선언)에 액세스할 수 없습니다.
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\DynamicObejct.h(12): message :  컴파일러에서 여기에 'CDynamicObject::~CDynamicObject'을(를) 생성했습니다.
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\DynamicObejct.h(4): message :  'CDynamicObject' 선언을 참조하십시오.
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\Singleton.h(27): message :  클래스 템플릿 멤버 함수 'void CDynamicAllocSingleton<CDynamicObject>::Destroy(void)'을(를) 컴파일하는 중입니다.
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\Main.cpp(10): message :  컴파일되는 함수 템플릿 인스턴스화 'void CDynamicAllocSingleton<CDynamicObject>::Destroy(void)'에 대한 참조를 확인하세요.
+  NonDynamicObject.cpp
+  코드를 생성하고 있습니다...
+C:\Users\ohhh1\Desktop\DesignPattern\SingletonPattern\DynamicObejct.h(6): message :  컴파일되는 클래스 템플릿 인스턴스화 'CDynamicAllocSingleton<CDynamicObject>'에 대한 참조를 확인하세요.

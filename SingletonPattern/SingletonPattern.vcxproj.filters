@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{b87f65f7-b541-457e-bd6e-c4a81bf1897c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\0_Main">
+      <UniqueIdentifier>{341139e8-1120-48a6-a092-67b9b3376bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\1_Singleton">
+      <UniqueIdentifier>{4a919c6e-c923-49a2-8411-2195e361add3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\1_Singleton\1_DynamicObject">
+      <UniqueIdentifier>{96d2a886-3634-47cd-bb90-b462e37509d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\1_Singleton\2_NonDynamicObject">
+      <UniqueIdentifier>{c3ee3004-9f46-43ca-ae8f-3c2ef53cc97c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>source\0_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicObject.cpp">
+      <Filter>source\1_Singleton\1_DynamicObject</Filter>
+    </ClCompile>
+    <ClCompile Include="NonDynamicObject.cpp">
+      <Filter>source\1_Singleton\2_NonDynamicObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includer.h">
+      <Filter>source\0_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>source\1_Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicObject.h">
+      <Filter>source\1_Singleton\1_DynamicObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NonDynamicObject.h">
+      <Filter>source\1_Singleton\2_NonDynamicObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
