@@ -36,7 +36,3 @@
 \x64
 \Debug
 \Release
-
-# VisualStudio
-*.vcxproj
-*.vcxproj.user
