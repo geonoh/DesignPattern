@@ -32,7 +32,11 @@
 *.app
 
 # Debug, Release folder
-*/.vs
-*/x64
-*/Debug
-*/Release
+\.vs
+\x64
+\Debug
+\Release
+
+# VisualStudio
+*.vcxproj
+*.vcxproj.user
