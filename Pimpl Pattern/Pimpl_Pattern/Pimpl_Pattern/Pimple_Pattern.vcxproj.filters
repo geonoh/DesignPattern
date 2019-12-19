@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointImpl.cpp" />
+    <ClCompile Include="Origin.cpp">
+      <Filter>GunnyTest\0_OriginClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Forward.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PointImpl.h" />
+    <ClInclude Include="Origin.h">
+      <Filter>GunnyTest\0_OriginClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Forward.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GunnyTest">
+      <UniqueIdentifier>{ad855bb1-cf88-4633-88fc-8944b0854f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GunnyTest\0_OriginClass">
+      <UniqueIdentifier>{54b33ccd-7d63-452a-bd27-7f9cc5621639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GunnyTest\1_FowardClass">
+      <UniqueIdentifier>{31cdb41f-bb7b-4199-b263-82bdb6df6224}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
