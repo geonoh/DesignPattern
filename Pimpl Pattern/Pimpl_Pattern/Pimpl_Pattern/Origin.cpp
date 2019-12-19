@@ -16,6 +16,8 @@ Origin::Origin(int InNumber)
 Origin::~Origin()
 {
 	std::cout << "Origin destructor was called\n";
+
+	delete ForwardMember;
 }
 
 void Origin::Print()
