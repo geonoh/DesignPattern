@@ -1,55 +1,30 @@
-#include "ProjectHeader.h"
+#include "CObserver.h"
+#include "CManager.h"
 
-// Project Init
-void Init();
-void Destroy();
+CObserver* MakeWidget()
+{
+	return new CObserver;
+}
 
-// Observer
-void InitObserver();
-void DestroyObserver();
+void Init()
+{
+	// Init instances
 
-// Widget
-void InitWidgets();
-void DestroyWidgets();
+}
 
 int main()
 {
 	Init();
 
+	// Test Logic
 	while (true)
 	{
-		GetObserver()->Tick();
+		// Get Key input 
+
+
+		// Check for subscribers and notify subscribers
+		CManager* Manager = CManager::Get();
+		Manager->CheckSubscribers();
+		Manager->NotifySubscriber();
 	}
-
-}
-
-void Init()
-{
-	InitObserver();
-	InitWidgets();
-}
-
-void Destroy()
-{
-	DestroyObserver();
-}
-
-void InitObserver()
-{
-	GetObserver()->NativeConstruct();
-}
-
-void DestroyObserver()
-{
-	GetObserver()->NativeDestuct();
-}
-
-void InitWidgets()
-{
-
-}
-
-void DestroyWidgets()
-{
-
 }

@@ -16,48 +16,41 @@
     <Filter Include="Source\1_DesignPattern\Singleton">
       <UniqueIdentifier>{f1037d67-f689-42c2-9c74-79638711be16}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\0_Main\1_ObserverContent">
-      <UniqueIdentifier>{d186df0b-2bb2-47b1-abc6-131a30bd2d31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\0_Main\2_Widget">
-      <UniqueIdentifier>{98e37b50-7252-4915-9cb6-3cb8ce1aeb75}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\0_Main\0_Object">
       <UniqueIdentifier>{b898d702-bdb6-413b-8dc4-e36a28499064}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\1_DesignPattern\Action">
+      <UniqueIdentifier>{f7dae6a6-01aa-4823-aa70-d4fb4d0c4d9d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Observer.cpp">
-      <Filter>Source\1_DesignPattern\Observer</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source\0_Main</Filter>
-    </ClCompile>
-    <ClCompile Include="World.cpp">
-      <Filter>Source\0_Main\1_ObserverContent</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>Source\0_Main\0_Object</Filter>
     </ClCompile>
+    <ClCompile Include="CObserver.cpp">
+      <Filter>Source\1_DesignPattern\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="CManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Observer.h">
-      <Filter>Source\1_DesignPattern\Observer</Filter>
-    </ClInclude>
     <ClInclude Include="Singleton.h">
       <Filter>Source\1_DesignPattern\Singleton</Filter>
     </ClInclude>
     <ClInclude Include="Includer.h">
       <Filter>Source\0_Main</Filter>
     </ClInclude>
-    <ClInclude Include="ProjectHeader.h">
-      <Filter>Source\0_Main</Filter>
-    </ClInclude>
-    <ClInclude Include="World.h">
-      <Filter>Source\0_Main\1_ObserverContent</Filter>
-    </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>Source\0_Main\0_Object</Filter>
     </ClInclude>
+    <ClInclude Include="CObserver.h">
+      <Filter>Source\1_DesignPattern\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverAction.h">
+      <Filter>Source\1_DesignPattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="CManager.h" />
   </ItemGroup>
 </Project>

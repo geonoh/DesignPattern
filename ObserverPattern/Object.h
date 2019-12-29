@@ -7,6 +7,7 @@ public:
 	CObject() {}
 	~CObject() {}
 
+protected:
 	virtual void NativeConstruct() = 0;
 	virtual void NativeDestuct() = 0;
 
