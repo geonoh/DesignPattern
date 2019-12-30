@@ -1,32 +1,19 @@
 #pragma once
-#include "Singleton.h"
-
-enum class EObserverContent
-{
-	World,
-	Max,
-};
-
-// forward declare
-class CWorld;
-class CObject;
 
 class CObserver
-	: public CSingleton<typename CObserver>
 {
 public:
-	CObserver() {}
-	~CObserver() {}
+	CObserver();
+	explicit CObserver(int InNumber) { ObserverId = InNumber; }
 
-	// Construct and Destruct
-	virtual void NativeConstruct() override;
-	virtual void NativeDestuct() override;
+	CObserver(const CObserver& InObject) { this->ObserverId = InObject.ObserverId; }
+	CObserver(CObserver&& InObject) noexcept { this->ObserverId = InObject.ObserverId; }
 
-	virtual	void Tick() override;
+	~CObserver();
 
-	// Subscriber 
-	void Subscirbe(CObject* InObejct, EObserverContent InObserverContent);
+	int GetObserverNumber() const { return ObserverId; }
+	void OnNotify(int InTestNumber);
 
 private:
-	CWorld* GetWorld();
+	int ObserverId;
 };

@@ -2,55 +2,38 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source">
-      <UniqueIdentifier>{de0ef8db-b488-40e6-8107-d39049520589}</UniqueIdentifier>
+      <UniqueIdentifier>{cce581c4-3050-43dc-a80a-8696e7b74342}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\0_Main">
-      <UniqueIdentifier>{45e321dc-98fa-44b7-893a-3e6c8d6b45d2}</UniqueIdentifier>
+    <Filter Include="Source\0_main">
+      <UniqueIdentifier>{c2b4e7b5-c6ff-4dfe-80c8-1cb875d52d5a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\1_DesignPattern">
-      <UniqueIdentifier>{9750d44a-9001-4865-a845-8a1483c33c33}</UniqueIdentifier>
+    <Filter Include="Source\1_Manager">
+      <UniqueIdentifier>{7e7b68ad-056d-4fc0-b534-8f926e93eee5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\1_DesignPattern\Observer">
-      <UniqueIdentifier>{37739b5b-d2a3-4d6f-bce3-22200ce2b2ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\1_DesignPattern\Singleton">
-      <UniqueIdentifier>{f1037d67-f689-42c2-9c74-79638711be16}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\0_Main\0_Object">
-      <UniqueIdentifier>{b898d702-bdb6-413b-8dc4-e36a28499064}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\1_DesignPattern\Action">
-      <UniqueIdentifier>{f7dae6a6-01aa-4823-aa70-d4fb4d0c4d9d}</UniqueIdentifier>
+    <Filter Include="Source\2_Observer">
+      <UniqueIdentifier>{df449262-39f7-4376-976f-2b1f3be607a0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source\0_Main</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source\0_main</Filter>
     </ClCompile>
-    <ClCompile Include="Object.cpp">
-      <Filter>Source\0_Main\0_Object</Filter>
+    <ClCompile Include="Manager.cpp">
+      <Filter>Source\1_Manager</Filter>
     </ClCompile>
-    <ClCompile Include="CObserver.cpp">
-      <Filter>Source\1_DesignPattern\Observer</Filter>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Source\2_Observer</Filter>
     </ClCompile>
-    <ClCompile Include="CManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Singleton.h">
-      <Filter>Source\1_DesignPattern\Singleton</Filter>
+    <ClInclude Include="Project.h">
+      <Filter>Source\0_main</Filter>
     </ClInclude>
-    <ClInclude Include="Includer.h">
-      <Filter>Source\0_Main</Filter>
+    <ClInclude Include="Manager.h">
+      <Filter>Source\1_Manager</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>Source\0_Main\0_Object</Filter>
+    <ClInclude Include="Observer.h">
+      <Filter>Source\2_Observer</Filter>
     </ClInclude>
-    <ClInclude Include="CObserver.h">
-      <Filter>Source\1_DesignPattern\Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="ObserverAction.h">
-      <Filter>Source\1_DesignPattern\Action</Filter>
-    </ClInclude>
-    <ClInclude Include="CManager.h" />
   </ItemGroup>
 </Project>

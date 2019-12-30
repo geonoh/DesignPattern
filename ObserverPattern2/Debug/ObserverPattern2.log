@@ -1,7 +1,0 @@
-﻿  Main.cpp
-C:\Users\ohhh1\Desktop\Coding\DesignPattern\ObserverPattern2\Main.cpp(79,17): warning C4834: discarding return value of function with 'nodiscard' attribute
-  Manager.cpp
-C:\Users\ohhh1\Desktop\Coding\DesignPattern\ObserverPattern2\Manager.cpp(22,20): warning C4018: '<': signed/unsigned mismatch
-  Observer.cpp
-  Generating Code...
-  ObserverPattern2.vcxproj -> C:\Users\ohhh1\Desktop\Coding\DesignPattern\ObserverPattern2\Debug\ObserverPattern2.exe

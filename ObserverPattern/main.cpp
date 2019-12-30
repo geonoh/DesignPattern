@@ -1,30 +1,83 @@
-#include "CObserver.h"
-#include "CManager.h"
+#include "Project.h"
+#include "Observer.h"
+#include "Manager.h"
 
-CObserver* MakeWidget()
-{
-	return new CObserver;
-}
+static const int NUM_OBSERVER = 5;
+static const int ASCII_TO_INT_DIFF = 48;
 
-void Init()
-{
-	// Init instances
+CManager* Manager = nullptr;
+std::vector<CObserver*> Observers;
 
-}
+void Init();
+void ReceiveKeyInput();
+void Destructor();
 
 int main()
 {
 	Init();
 
-	// Test Logic
 	while (true)
 	{
-		// Get Key input 
-
-
-		// Check for subscribers and notify subscribers
-		CManager* Manager = CManager::Get();
-		Manager->CheckSubscribers();
-		Manager->NotifySubscriber();
+		ReceiveKeyInput();
 	}
+}
+
+void Init()
+{
+	Manager = new CManager();
+
+	for (int i = 0; i < NUM_OBSERVER; ++i)
+	{
+		Observers.emplace_back(new CObserver(i));
+	}
+
+	// You can add more observers
+	Manager->AddObserver(Observers[0]);
+	Manager->AddObserver(Observers[1]);
+	Manager->AddObserver(Observers[2]);
+	Manager->AddObserver(Observers[3]);
+}
+
+void ReceiveKeyInput()
+{
+	while (true)
+	{
+		int InputAscii = _getch();
+		InputAscii -= ASCII_TO_INT_DIFF;
+		CObserver* CalledObserver = nullptr;
+
+		switch (InputAscii)
+		{
+			case 0:
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+				break; // fall through
+			default:
+				Destructor();
+				exit(1);
+				break;
+		}
+
+		Manager->NotifyToObservers(InputAscii);
+	}
+}
+
+void Destructor()
+{
+	for (int i = 0; i < NUM_OBSERVER; ++i)
+	{
+		delete Observers[i];
+	}
+
+	Observers.empty();
+
+	delete Manager;
+	Manager = nullptr;
 }
