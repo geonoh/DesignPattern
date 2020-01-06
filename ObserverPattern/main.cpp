@@ -76,7 +76,7 @@ void Destructor()
 		delete Observers[i];
 	}
 
-	Observers.empty();
+	Observers.clear();
 
 	delete Manager;
 	Manager = nullptr;
