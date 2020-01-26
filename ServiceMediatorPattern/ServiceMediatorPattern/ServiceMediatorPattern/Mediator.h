@@ -25,7 +25,7 @@ public:
 	static void initialize() {
 		service_ = &nullService;
 	}
-	static Audio& getAudio() { return *service_; }
+	static Audio* getAudio() { return service_; }
 	static void provide(Audio* service);
 
 private:
