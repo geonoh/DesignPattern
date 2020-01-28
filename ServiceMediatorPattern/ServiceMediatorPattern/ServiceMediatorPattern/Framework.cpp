@@ -21,6 +21,7 @@ void Framework::initialize()
 #endif
 
 #ifdef NULL_MEDIATOR_SET
+	NullMediator::initialize();
 	NullMediator::provide(audio);
 #else // 
 	Mediator::provide(audio);

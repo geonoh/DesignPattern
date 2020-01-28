@@ -2,6 +2,7 @@
 #include <iostream>
 
 
+
 int main()
 {
 	Framework framework;
@@ -14,6 +15,10 @@ int main()
 
 	//어떤 구체 클래스가 실제로 사용되는지는 서비스를 제공하는 초기화 
 	//코드에서만 알 수 있다.
+#ifndef NULL_MEDIATOR_SET
 	Audio* audio = Mediator::getAudio();
+
+#endif // !NULL_MEDIATOR_SET
+	Audio* audio = &NullMediator::getAudio();
 	audio->playSound(VOLUME_LOUD);
 }
