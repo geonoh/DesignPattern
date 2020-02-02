@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\00_Main">
+      <UniqueIdentifier>{1bb776f6-d757-434f-8f08-b0cb58992321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_FactoryInterface">
+      <UniqueIdentifier>{787dcd41-5ae5-4a10-98d0-d6cd1d8f3f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_FactoryInterface\00_Interface">
+      <UniqueIdentifier>{ab56835e-1190-4285-b720-c49116ef641a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_FactoryInterface\01_FirstInterface">
+      <UniqueIdentifier>{11dc9243-505b-47cf-ba1c-9f4d7f74f4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_FactoryInterface\02_SecondInterface">
+      <UniqueIdentifier>{ae6a59a7-a9be-4723-8c16-79635f07440f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Source Files\01_FactoryInterface\00_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstInterface.cpp">
+      <Filter>Source Files\01_FactoryInterface\01_FirstInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondInterface.cpp">
+      <Filter>Source Files\01_FactoryInterface\02_SecondInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interface.h">
+      <Filter>Source Files\01_FactoryInterface\00_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstInterface.h">
+      <Filter>Source Files\01_FactoryInterface\01_FirstInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondInterface.h">
+      <Filter>Source Files\01_FactoryInterface\02_SecondInterface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
